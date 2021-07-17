@@ -12,8 +12,8 @@ import static org.openqa.selenium.By.partialLinkText;
 
 public class Lambda {
 
-    private static final String REPOSITORY = "eroshenkoam/allure-example";
-    private static final int ISSUE_NUMBER = 68;
+    private static final String REPOSITORY = "3osnovy_java";
+    private static final int ISSUE_NUMBER = 1;
 
     @Test
     public void testRepositoryIssue() {
@@ -26,7 +26,7 @@ public class Lambda {
             $(".header-search-input").submit();
         });
         step("Переходим в репозиторий", () -> {
-            $(linkText("eroshenkoam/allure-example")).click();
+            $(partialLinkText("3osnovy_java")).click();
         });
         step("Переходим в раздел Issues", () -> {
             $(partialLinkText("Issues")).click();

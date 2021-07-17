@@ -20,12 +20,12 @@ public class Selenide {
         open("https://github.com");
 
         $(".header-search-input").click();
-        $(".header-search-input").sendKeys("eroshenkoam/allure-example");
+        $(".header-search-input").sendKeys("3osnovy_java");
         $(".header-search-input").submit();
 
-        $(linkText("eroshenkoam/allure-example")).click();
+        $(partialLinkText("3osnovy_java")).click();
         $(partialLinkText("Issues")).click();
-        $(byText("#68")).should(Condition.exist);
+        $(byText("#1")).should(Condition.exist);
     }
 
 }

@@ -4,8 +4,8 @@ import org.junit.jupiter.api.Test;
 
 public class Steps {
 
-    private static final String REPOSITORY = "eroshenkoam/allure-example";
-    private static final int ISSUE_NUMBER = 68;
+    private static final String REPOSITORY = "3osnovy_java";
+    private static final int ISSUE_NUMBER = 1;
 
     private WebSteps steps = new WebSteps();
 
