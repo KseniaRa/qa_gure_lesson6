@@ -2,12 +2,12 @@ package tests_allure;
 
 import org.junit.jupiter.api.Test;
 
-public class TestWithSteps {
+public class Steps {
 
     private static final String REPOSITORY = "eroshenkoam/allure-example";
     private static final int ISSUE_NUMBER = 68;
 
-    private TestSteps steps = new TestSteps();
+    private WebSteps steps = new WebSteps();
 
     @Test
     public void shouldSeeIssueInRepository() {
@@ -17,4 +17,7 @@ public class TestWithSteps {
         steps.openIssuesTab();
         steps.shouldSeeIssueWithNumber(ISSUE_NUMBER);
     }
+
 }
+
+

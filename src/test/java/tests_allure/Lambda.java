@@ -10,9 +10,10 @@ import static io.qameta.allure.Allure.step;
 import static org.openqa.selenium.By.linkText;
 import static org.openqa.selenium.By.partialLinkText;
 
-public class LambdaTest {
+public class Lambda {
+
     private static final String REPOSITORY = "eroshenkoam/allure-example";
-    private static final int ISSUE_NUMBER = 69;
+    private static final int ISSUE_NUMBER = 68;
 
     @Test
     public void testRepositoryIssue() {
@@ -34,5 +35,5 @@ public class LambdaTest {
             $(withText("#" + ISSUE_NUMBER)).should(Condition.exist);
         });
     }
-}
 
+}
